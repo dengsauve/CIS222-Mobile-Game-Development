@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Lecture4.5.18.unity
+  isLoaded: 1
+  isActive: 1
