@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212863297158455028}
   - component: {fileID: 61384888716239160}
   - component: {fileID: 50318309356456780}
+  - component: {fileID: 114246038398512864}
   m_Layer: 0
   m_Name: SpringSprite
   m_TagString: Untagged
@@ -87,6 +88,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2241068, y: 1.9959922}
   m_EdgeRadius: 0
+--- !u!114 &114246038398512864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1660372787421354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72685d4b2dc334f5f8c1e64fe0f26459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 0
+  onGround: 0
 --- !u!212 &212863297158455028
 SpriteRenderer:
   m_ObjectHideFlags: 1
