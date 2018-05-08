@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
 
-	public float playerSpeed;
+	public float playerSpeed = 5;
 	public bool onGround;
+    public bool useForce = false;
 	private Rigidbody2D player;
 
 	// Use this for initialization
@@ -19,6 +20,9 @@ public class PlayerMove : MonoBehaviour {
 		float moveVertical = Input.GetAxis ("Vertical");
 
 		Vector2 move = new Vector2 (moveHorizontal * playerSpeed, moveVertical * playerSpeed);
-		player.velocity = move;
+        if( useForce )
+            player.AddForce(move);
+        else
+            player.velocity = move;
 	}
 }
